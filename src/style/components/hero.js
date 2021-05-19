@@ -104,17 +104,19 @@ const HeroStyled = Styled.section`
 
                 li {
                     font-weight: 400;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     color: #333;
-                    margin-bottom: 2.5rem;
-
-                    @media (max-width: 768px) {
-                        font-size: 1.2rem;
-                        margin-bottom: 1.5rem;
-                    }
+                    margin-bottom: 1rem;
 
                     &:last-child{
                         margin-bottom: 0;
+                    }
+
+                    &.red {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: #F11C1C;
+                        margin-top: 2.5rem;
                     }
                 }
             }

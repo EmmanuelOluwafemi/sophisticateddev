@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import HeaderStyle from '../style/components/header';
 
 import menuClosed from '../assets/icons/menuCLosed.svg';
@@ -20,9 +22,9 @@ const Header = ({ handleOnclick }) => {
                         <img src={menuClosed} onClick={handleOnclick} alt="menu Icon" />
                     </div>
 
-                    <div className="logo">
+                    <Link to="/" className="logo">
                         <img src={logo} alt="" />
-                    </div>
+                    </Link>
 
                     <div className="socialIcons">
                         <a data-name="twitter" href="twitter.com"><img src={twitter} alt="twitter link" /></a>

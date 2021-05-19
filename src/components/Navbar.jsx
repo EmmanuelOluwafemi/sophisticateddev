@@ -13,7 +13,7 @@ const Navbar = ({ handleOnclick }) => {
 
             <ul>
                 <li><Link to="/" onClick={handleOnclick}>Home</Link></li>
-                <li><Link onClick={handleOnclick}>Projects</Link></li>
+                <li><Link to="/projects" onClick={handleOnclick}>Projects</Link></li>
                 <li><Link to="/about" onClick={handleOnclick}>About Me</Link></li>
                 <li><Link onClick={handleOnclick}>Random Stuffs</Link></li>
                 <li><Link onClick={handleOnclick}>Get in touch</Link></li>

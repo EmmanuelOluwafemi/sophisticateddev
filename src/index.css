@@ -41,7 +41,6 @@ body {
   background-image: url('./assets/images/grid.png');
   background-repeat: repeat-y;
   overflow-x: hidden;
-  /* background-size: cover; */
 }
 
 .container {

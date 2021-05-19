@@ -28,7 +28,7 @@ const Hero = () => {
                             <li>What do you envision for your users? </li>
                             <li>What is your favourite application? </li>
                             <li>Design makes businesses achieve their goals with the users in mind.</li>
-                            <li>I can help you get there!!!</li>
+                            <li className="red">I can help you get there!!!</li>
                         </ul>
                     </div>
                 </div>

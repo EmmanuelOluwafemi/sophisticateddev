@@ -3,7 +3,6 @@ import FeaturedSlides from '../components/featuredSlides';
 import Hero from '../components/Hero';
 import Styled from 'styled-components';
 import Marquee from '../components/Marquee';
-import Footer from '../components/Footer';
 import FeaturedSlideMobile from '../components/featuredSlides/FeaturedSlideMobile';
 
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
                 <FeaturedSlideMobile />
             </Featured>
             <Marquee />
-            <Footer />
         </>
     )
 }
