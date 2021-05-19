@@ -1,0 +1,91 @@
+import Styled from 'styled-components';
+
+const HeaderStyle = Styled.header`
+    width: 100%;
+    max-width: 100vw;
+    padding: 1.5rem 0;
+
+    @media (max-width: 768px) {
+        margin-bottom: 1.5rem;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu {
+            cursor: pointer;
+
+            img {
+                width: 3rem;
+                height: auto;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    width: 2.5rem;
+                }
+
+                @media (max-width: 768px) {
+                    width: 2rem;
+
+                    &:hover {
+                        width: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            left: 45%;
+            transform: translateX(-50%);
+
+            img {
+                @media (max-width: 768px) {
+                    width: 150px;
+                }
+            }
+        }
+
+        .socialIcons {
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            a {
+                margin-left: 2.5rem;
+                position: relative;
+
+                &::after {
+                    content: attr(data-name);
+                    position: absolute;
+                    bottom: -1.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all .5s ease-in-out;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+`;
+
+export default HeaderStyle;
