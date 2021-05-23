@@ -124,9 +124,11 @@ const FeatureSlidesContainer = Styled.div`
             transform: scale(1);
             position: absolute;
             top: 5%;
+            display: none;
             /* pointer-events: none; */
 
             &.as-primary {
+                display: block;
                 opacity: 1;
                 transform: scale(1);
             }

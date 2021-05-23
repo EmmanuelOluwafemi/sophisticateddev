@@ -10,6 +10,7 @@ export const NavbarStyle = Styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 5;
 
     ul {
@@ -25,6 +26,45 @@ export const NavbarStyle = Styled.nav`
                 font-size: 1.8rem;
                 color: #333;
                 text-align: center;
+            }
+        }
+    }
+
+    .socialIcons {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+            margin-top: 3rem;
+
+            a {
+                margin-left: 2.5rem;
+                position: relative;
+
+                &::after {
+                    content: attr(data-name);
+                    position: absolute;
+                    bottom: -1.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all .5s ease-in-out;
+                }
+
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
             }
         }
     }

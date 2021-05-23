@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import CaseStudy from './pages/CaseStudy';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
       <Header handleOnclick={handleOnclick} />
       {menu && <Navbar  handleOnclick={handleOnclick}/> }
       <Switch>
+          <Route path="/caseStudy">
+            <CaseStudy />
+          </Route>
           <Route path="/projects">
             <Projects />
           </Route>
