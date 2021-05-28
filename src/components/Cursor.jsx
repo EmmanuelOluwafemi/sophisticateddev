@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Styled from 'styled-components';
 import {gsap} from 'gsap';
 
-const Cursor = () => {
+const Cursor = ({ comingSoon }) => {
 
     const cusrsorRef = useRef(null)
     
@@ -13,12 +13,17 @@ const Cursor = () => {
     })
 
     return (
+        <>
+        {
+            !comingSoon &&
         <CursorStyle
         ref={cusrsorRef}
         className="cursor"
         >
             View<br />Case
         </CursorStyle>
+        }
+        </>
     )
 }
 

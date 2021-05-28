@@ -32,7 +32,7 @@ function App() {
       <Header handleOnclick={handleOnclick} />
       {menu && <Navbar  handleOnclick={handleOnclick}/> }
       <Switch>
-          <Route path="/caseStudy">
+          <Route path="/caseStudy/:id">
             <CaseStudy />
           </Route>
           <Route path="/projects">

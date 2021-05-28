@@ -11,8 +11,10 @@ const Projects = () => {
             <div className="container">
                 <h3>Featured Projects</h3>
                 <div className="grid">
-                    {projects.map(project => (
+                    {projects.map((project, index) => (
                         <SingleProject 
+                            key={project.imageUrl}
+                            id={index}
                             imgUrl={project.imageUrl} 
                             title={project.title}
                             desc={project.description}

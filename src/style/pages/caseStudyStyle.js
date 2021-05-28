@@ -71,4 +71,18 @@ export const CaseContainer = Styled.section`
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
+    .linkContainer {
+        display: flex;
+        justify-content: center;
+        
+        a.proLink {
+            width: 100%;
+            text-align: center;
+            font-size: 4rem;
+            color: #000;
+            font-weight: 400;
+            margin: 0 auto;
+        }
+    }
 `;

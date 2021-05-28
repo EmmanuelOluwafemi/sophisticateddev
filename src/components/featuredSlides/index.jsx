@@ -26,12 +26,12 @@ function RenderImages (activeFeatureIndex) {
             
         }
         else {
-            return <Link to="/about"><img 
+            return <Link to={`/caseStudy/${index}`}><img 
             className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary its-hover' : 'its-hover'}
             key={imageUrl}
             style={{backgroundImage: `url(${imageUrl})`}}
             />
-            <Cursor />
+            <Cursor comingSoon={comingSoon} />
             </Link>
             // eslint-disable-next-lines
         }
