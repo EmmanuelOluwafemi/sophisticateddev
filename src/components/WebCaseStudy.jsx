@@ -12,6 +12,7 @@ const WebCaseStudy = ({ images }) => {
                         className={`img img-${index}`}
                         src={img} 
                         alt="app screens"
+                        debounce={50}
                     />
                 ))
             }

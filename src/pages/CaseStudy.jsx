@@ -26,12 +26,13 @@ const CaseStudy = () => {
 
     useEffect(() => {
         setCaseData(Data[id])
+        console.log(Data[id].researchStep)
     }, [id])
 
     return (
         <CaseContainer>
-            <Img src={caseData.heroBg} alt="project" />
-            <Img src={caseData.projectView} alt="project" />
+            <Img src={caseData.heroBg} alt="project" debounce={50} />
+            <Img src={caseData.projectView} alt="project" debounce={50} />
 
             <div className="container">
                 <div className="grid">
@@ -52,7 +53,7 @@ const CaseStudy = () => {
                 </div>
             </div>
 
-            <Img src={caseData.present} alt="project" />
+            <Img src={caseData.present} alt="project" debounce={50} />
 
             <div className="container">
                 <div className="grid">
@@ -65,9 +66,9 @@ const CaseStudy = () => {
                     <h3>Research Steps</h3>
                     <div className="content subgrid">
                         {
-                            caseData.length > 0 && caseData.researchStep.foreach(item => {
+                            Data[id].researchStep.length > 0 && Data[id].researchStep.map(item => (
                                 <p>{item}</p>
-                            }) 
+                            )) 
                         }
                     </div>
                 </div>
@@ -90,7 +91,7 @@ const CaseStudy = () => {
 
             {/* Idea */}
 
-            <Img src={caseData.ideaImg} alt="idea" />
+            <Img src={caseData.ideaImg} alt="idea" debounce={50} />
 
             <div className="container">
                 <div className="grid50">
@@ -109,7 +110,7 @@ const CaseStudy = () => {
                 </div>
             </div>
 
-            <Img src={caseData.userFlowImg} alt="flow" />
+            <Img src={caseData.userFlowImg} alt="flow" debounce={50} />
 
             <div className="container">
                 <div className="grid">
@@ -120,7 +121,7 @@ const CaseStudy = () => {
                 </div>
             </div>
             
-            <Img src={caseData.sketchImg} alt="sketch"/>
+            <Img src={caseData.sketchImg} alt="sketch" debounce={50} />
 
             <div className="container">
                 <div className="grid">
@@ -131,7 +132,7 @@ const CaseStudy = () => {
                 </div>
             </div>
 
-            <Img src={caseData.typography} alt="typography" />
+            <Img src={caseData.typography} alt="typography" debounce={50} />
 
             <div className="container">
                 <div className="grid">
@@ -190,7 +191,7 @@ const CaseStudy = () => {
             {
                 caseData.type === "web" &&
                 <>
-                    <Img src={caseData.display} alt="display" />
+                    <Img src={caseData.display} alt="display" debounce={50} />
 
                     <div className="container">
                         <div className="grid">

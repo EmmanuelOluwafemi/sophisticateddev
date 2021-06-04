@@ -12,7 +12,7 @@ const About = () => {
             <div className="row">
 
                 <div className="card mobile">
-                    <img src={face} alt="my face" />
+                    <Img src={face} alt="my face" debounce={50} />
                 </div>
                 <div className="card">
                     <svg viewBox="0 0 468 162" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ const About = () => {
                     
                 </div>
                 <div className="card web">
-                    <Img src={face} alt="my face" />
+                    <Img src={face} alt="my face" debounce={50} />
                 </div>
             </div>
         </AboutContainer>

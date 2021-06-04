@@ -16,7 +16,7 @@ const SingleProject = ({ imgUrl, title, desc, comingSoon, id }) => {
                 <Img 
                     src={imgUrl} 
                     alt={title} 
-                    debounce={500}
+                    debounce={50}
                 />
                 <h5>{title}</h5>
                 <p>{desc}</p>
@@ -28,7 +28,7 @@ const SingleProject = ({ imgUrl, title, desc, comingSoon, id }) => {
                     <Img 
                         src={imgUrl} 
                         alt={title} 
-                        debounce={500}
+                        debounce={50}
                     />
                     <h5>{title}</h5>
                     <p>{desc}</p>

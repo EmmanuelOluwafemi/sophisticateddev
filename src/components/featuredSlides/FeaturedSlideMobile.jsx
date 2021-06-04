@@ -2,12 +2,31 @@ import React from 'react';
 import Styled from 'styled-components';
 import {featuredSlides} from '../../utils/data';
 
+import Img from 'react-cool-img';
+import {Link} from 'react-router-dom';
+
 const FeaturedSlideMobile = () => {
     return (
         <MobileFeaturedStyle>
-            {featuredSlides.map(item => (
+            {featuredSlides.map((item, index) => (
+                <>
+                {!item.comingSoon ? 
+                <Link to={`/caseStudy/${index}`} style={{ textDecoration: 'none' }}>
+                    <div key={item.imageUrl} className="featured">
+                        <Img src={item.imageUrl} alt={item.title} debounce={50} />
+                        <div className="featured_content">
+                            <div className="title"><span>{item.title}</span> - {item.description}</div>
+                            <div className="works">
+                                {item.works && item.works.map(work => (
+                                    <p>{work} <div></div></p>
+                                ))}
+                            </div>
+                            {item.comingSoon && <div className="comingSoon">Coming soon...</div>}
+                        </div>
+                    </div>
+                </Link> :
                 <div key={item.imageUrl} className="featured">
-                    <img src={item.imageUrl} alt={item.title} />
+                    <Img src={item.imageUrl} alt={item.title} debounce={50} />
                     <div className="featured_content">
                         <div className="title"><span>{item.title}</span> - {item.description}</div>
                         <div className="works">
@@ -17,7 +36,8 @@ const FeaturedSlideMobile = () => {
                         </div>
                         {item.comingSoon && <div className="comingSoon">Coming soon...</div>}
                     </div>
-                </div>
+                </div>}
+                </>
             ))}
         </MobileFeaturedStyle>
     )

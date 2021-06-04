@@ -11,7 +11,7 @@ const MobileCaseStudy = ({ title, footnote, images }) => {
             <div className="gridMobile">
                 {
                     images.map(img => (
-                        <Img src={img} alt="app screens" />
+                        <Img src={img} alt="app screens" debounce={50} />
                     ))
                 }
             </div>
