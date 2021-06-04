@@ -7,6 +7,8 @@ import FeaturedSlideMobile from '../components/featuredSlides/FeaturedSlideMobil
 
 const Home = () => {
 
+    window.scrollTo(0, 0);
+    
     return (
         <>
             <Hero />

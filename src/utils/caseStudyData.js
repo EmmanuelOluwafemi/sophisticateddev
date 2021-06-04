@@ -1,5 +1,69 @@
 export const Data = [
     {
+        title: 'Stay Bite',
+        type: "web",
+        heroBg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966762/SophisticatedDev/StayBite/heroBg_qz0txp.jpg',
+        projectView: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966762/SophisticatedDev/StayBite/projectView_vjf0ym.jpg',
+        why: ['Dreams they say are meant to come true but most times no make how valid our dreams are they still don’t come to reality. This may be because we don’t have the capacity to build an idea or that we do not have the time to build such an idea. Yes getting a good team to work on your ideas is difficult, getting the best team to work on your ideas within your budget is a herculean task.'],
+        aim: "To make it very simple, fast and efficient for people of all sorts, no matter your level of expertise in tech to share their ideas in a few steps and get a team within their budget.",
+        present: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966755/SophisticatedDev/StayBite/present_rw0ok0.jpg',
+        research: 'Various research methodologies were used in getting people to share how they do share their ideas to companies to help them develop them, I also found out their frustrations and where there is a bridge of trust.',
+        researchStep: ['UProblem Identification', 'Afinity Mapping', 'Survey', 'Persona', 'Interview', 'Empathy Map', 'Competitor Analysis'],
+        quote: [
+            {
+                text: 'I Find it difficult to trust development companies with my ideas, had a bad experience with one, they built something entirely different from what I told them to do.',
+                number: 1
+            },
+            {
+                text: 'Many agencies I have worked with in developing my ideas were very tight with their budget. There was no flexibility.',
+                number: 2
+            },
+            {
+                text: 'I kept asking them, why I can’t be assigned a particular team specialized in what I need. Huh, it was frustrating!',
+                number: 3
+            },
+            {
+                text: 'I lost huge investors because one agency failed to deliver my product on a said date. It took me a lot not to sue the company for damages.',
+                number: 4
+            },
+        ],
+        ideaImg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966764/SophisticatedDev/StayBite/idea_tujfrm.jpg',
+        ideaProcess: [
+            {
+                text: 'of our respondent have had products they didn’t sign off on delivered to them. They complained about a communication and understanding gap between them and the agencies.',
+                number: 60
+            },
+            {
+                text: 'of employees of software agencies agreed that a more succint way of getting information from the client is very essential.',
+                number: 40
+            },
+            {
+                text: 'of our respondent has left their project in the hands of agencies more than once.',
+                number: 90
+            },
+            {
+                text: 'of our respondents said they loved it when given the ability to chose what the want in a way they want it without being misunderstood.',
+                number: 50
+            },
+        ],
+        userFlow: 'The onboarding experience is chosen to consolidate what the user wants and how he wants it. The user flow for the project was drawn out having in mind the constraints that were pointed out by the potential users and trying as much as possible to have a seamless onboard.',
+        userFlowImg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966759/SophisticatedDev/StayBite/flowchart_hqqmn3.jpg',
+        sketches: "From the user flow, initial sketches were made in order to get a clearer picture of how the design would be and also help in quick testing. Here a lot of changes were made and effected.",
+        sketchImg: "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966762/SophisticatedDev/StayBite/sketchs_cxasul.jpg",
+        styleGuide: "The client provided the brand color and the already designed logo alongside the brand guideline. Throughout the design, this branding was followed meticulously.",
+        typography: "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966759/SophisticatedDev/StayBite/typography_x1lc0s.jpg",
+        testing: "With the basic sketches and wireframes, I presented it to a selected people to find out what their thought was on the process and it was very insightful. I saw that the process had a lot of cognitive load on the users. I had to cut down on the process taken to understand clients need and make it simpler.",
+        finding: "The words that help people converse day to day are the most important words to use in design. This will help the client to explain himself very well at the same time not confusing the development company. By this everyone will be on the same page.",
+        fidelity: "I went into designing the high fidelity to be presented to the project owner. This involved designing with full color, UX writing and proper information hierarchy.",
+        display: "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966761/SophisticatedDev/StayBite/Group_19833_ihejzb.jpg",
+        takeaway: "When there is a gap in communication. A clear language or tone can be set by a brand to bridge this. When this is done it easier for the Users to get the information, interpret it and explain themselves in a way an agency understands. I also made a lot of mistakes prior to completing this project. I learnt that mistakes are part of the process and iteration is the answer.",
+        webView: ["https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966765/SophisticatedDev/StayBite/mb1_qhkwfd.jpg",
+                "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966764/SophisticatedDev/StayBite/mb2_j1cqet.jpg",
+                "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966755/SophisticatedDev/StayBite/mb3_h65oco.jpg"        
+        ],
+        prototype: "https://www.figma.com/proto/Sza0VKNHsVitl0RDWRBJug/Selected-Projects?node-id=1%3A73&scaling=min-zoom&fuid=601593344884123480"
+    },
+    {
         title: 'Food Nation',
         type: "mobile",
         heroBg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621958245/SophisticatedDev/FoodNation/heroBg_kdqlti.jpg',
@@ -104,69 +168,5 @@ export const Data = [
             }
         ],
         prototype: "https://www.figma.com/proto/IO7rABsbx7KS3ctAGJJwLOYV/Food-Nation?node-id=295%3A178&scaling=scale-down&fuid=601593344884123480"
-    },
-    {
-        title: 'Stay Bite',
-        type: "web",
-        heroBg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966762/SophisticatedDev/StayBite/heroBg_qz0txp.jpg',
-        projectView: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966762/SophisticatedDev/StayBite/projectView_vjf0ym.jpg',
-        why: ['Dreams they say are meant to come true but most times no make how valid our dreams are they still don’t come to reality. This may be because we don’t have the capacity to build an idea or that we do not have the time to build such an idea. Yes getting a good team to work on your ideas is difficult, getting the best team to work on your ideas within your budget is a herculean task.'],
-        aim: "To make it very simple, fast and efficient for people of all sorts, no matter your level of expertise in tech to share their ideas in a few steps and get a team within their budget.",
-        present: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966755/SophisticatedDev/StayBite/present_rw0ok0.jpg',
-        research: 'Various research methodologies were used in getting people to share how they do share their ideas to companies to help them develop them, I also found out their frustrations and where there is a bridge of trust.',
-        researchStep: ['UProblem Identification', 'Afinity Mapping', 'Survey', 'Persona', 'Interview', 'Empathy Map', 'Competitor Analysis'],
-        quote: [
-            {
-                text: 'I Find it difficult to trust development companies with my ideas, had a bad experience with one, they built something entirely different from what I told them to do.',
-                number: 1
-            },
-            {
-                text: 'Many agencies I have worked with in developing my ideas were very tight with their budget. There was no flexibility.',
-                number: 2
-            },
-            {
-                text: 'I kept asking them, why I can’t be assigned a particular team specialized in what I need. Huh, it was frustrating!',
-                number: 3
-            },
-            {
-                text: 'I lost huge investors because one agency failed to deliver my product on a said date. It took me a lot not to sue the company for damages.',
-                number: 4
-            },
-        ],
-        ideaImg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966764/SophisticatedDev/StayBite/idea_tujfrm.jpg',
-        ideaProcess: [
-            {
-                text: 'of our respondent have had products they didn’t sign off on delivered to them. They complained about a communication and understanding gap between them and the agencies.',
-                number: 60
-            },
-            {
-                text: 'of employees of software agencies agreed that a more succint way of getting information from the client is very essential.',
-                number: 40
-            },
-            {
-                text: 'of our respondent has left their project in the hands of agencies more than once.',
-                number: 90
-            },
-            {
-                text: 'of our respondents said they loved it when given the ability to chose what the want in a way they want it without being misunderstood.',
-                number: 50
-            },
-        ],
-        userFlow: 'The onboarding experience is chosen to consolidate what the user wants and how he wants it. The user flow for the project was drawn out having in mind the constraints that were pointed out by the potential users and trying as much as possible to have a seamless onboard.',
-        userFlowImg: 'https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966759/SophisticatedDev/StayBite/flowchart_hqqmn3.jpg',
-        sketches: "From the user flow, initial sketches were made in order to get a clearer picture of how the design would be and also help in quick testing. Here a lot of changes were made and effected.",
-        sketchImg: "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966762/SophisticatedDev/StayBite/sketchs_cxasul.jpg",
-        styleGuide: "The client provided the brand color and the already designed logo alongside the brand guideline. Throughout the design, this branding was followed meticulously.",
-        typography: "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966759/SophisticatedDev/StayBite/typography_x1lc0s.jpg",
-        testing: "With the basic sketches and wireframes, I presented it to a selected people to find out what their thought was on the process and it was very insightful. I saw that the process had a lot of cognitive load on the users. I had to cut down on the process taken to understand clients need and make it simpler.",
-        finding: "The words that help people converse day to day are the most important words to use in design. This will help the client to explain himself very well at the same time not confusing the development company. By this everyone will be on the same page.",
-        fidelity: "I went into designing the high fidelity to be presented to the project owner. This involved designing with full color, UX writing and proper information hierarchy.",
-        display: "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966761/SophisticatedDev/StayBite/Group_19833_ihejzb.jpg",
-        takeaway: "When there is a gap in communication. A clear language or tone can be set by a brand to bridge this. When this is done it easier for the Users to get the information, interpret it and explain themselves in a way an agency understands. I also made a lot of mistakes prior to completing this project. I learnt that mistakes are part of the process and iteration is the answer.",
-        webView: ["https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966765/SophisticatedDev/StayBite/mb1_qhkwfd.jpg",
-                "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966764/SophisticatedDev/StayBite/mb2_j1cqet.jpg",
-                "https://res.cloudinary.com/dhqvopvj4/image/upload/v1621966755/SophisticatedDev/StayBite/mb3_h65oco.jpg"        
-        ],
-        prototype: "https://www.figma.com/proto/Sza0VKNHsVitl0RDWRBJug/Selected-Projects?node-id=1%3A73&scaling=min-zoom&fuid=601593344884123480"
     }
 ]

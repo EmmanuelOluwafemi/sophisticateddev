@@ -3,7 +3,10 @@ import React from 'react';
 import {AboutContainer} from '../style/pages/aboutStyle';
 import face from '../assets/images/sophisticated.jpg';
 
+import Img from 'react-cool-img';
+
 const About = () => {
+    window.scrollTo(0, 0);
     return (
         <AboutContainer>
             <div className="row">
@@ -54,7 +57,7 @@ const About = () => {
                     
                 </div>
                 <div className="card web">
-                    <img src={face} alt="my face" />
+                    <Img src={face} alt="my face" />
                 </div>
             </div>
         </AboutContainer>

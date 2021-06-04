@@ -1,13 +1,18 @@
 import React from 'react';
 import Styled from 'styled-components';
+import Img from 'react-cool-img';
 
 const WebCaseStudy = ({ images }) => {
 
     return (
         <WebCaseStudyStyle>
             {
-                images.map(img => (
-                    <img src={img} alt="app screens" />
+                images.map((img, index) => (
+                    <Img 
+                        className={`img img-${index}`}
+                        src={img} 
+                        alt="app screens"
+                    />
                 ))
             }
         </WebCaseStudyStyle>
@@ -24,13 +29,13 @@ const WebCaseStudyStyle = Styled.section`
     display: flex;
     flex-direction: column;
     
-    img {
+    .img {
         width: 100%;
         max-width: 742px;
         height: auto;
         
 
-        &:nth-child(even) {
+        &.img-1, &.img-3, &.img-5 {
             margin-left: auto;
         }
     }

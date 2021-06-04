@@ -6,6 +6,9 @@ import SingleProject from '../components/featuredSlides/SingleProject';
 import {ProjectsContainer} from '../style/pages/projectStyle';
 
 const Projects = () => {
+
+    window.scrollTo(0, 0);
+    
     return (
         <ProjectsContainer>
             <div className="container">

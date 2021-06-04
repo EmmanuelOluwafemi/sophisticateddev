@@ -15,7 +15,7 @@ function RenderImages (activeFeatureIndex) {
 
         
         if(comingSoon === true) {
-            return <><img 
+            return <><div 
             className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary its-hover' : 'its-hover'}
             key={imageUrl}
             style={{backgroundImage: `url(${imageUrl})`}}
@@ -26,7 +26,7 @@ function RenderImages (activeFeatureIndex) {
             
         }
         else {
-            return <Link to={`/caseStudy/${index}`}><img 
+            return <Link to={`/caseStudy/${index}`}><div 
             className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary its-hover' : 'its-hover'}
             key={imageUrl}
             style={{backgroundImage: `url(${imageUrl})`}}
@@ -113,7 +113,7 @@ const FeatureSlidesContainer = Styled.div`
             cursor: pointer;
         }
         
-        img {
+        div {
             width: 100%;
             height: 90%;
             background-position: center;

@@ -83,6 +83,10 @@ export const CaseContainer = Styled.section`
             color: #000;
             font-weight: 400;
             margin: 0 auto;
+
+            @media (max-width: 768px) {
+                font-size: 2rem;
+            }
         }
     }
 `;
