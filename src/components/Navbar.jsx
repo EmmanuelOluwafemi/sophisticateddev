@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import {NavbarStyle} from '../style/components/navbar'
 
@@ -18,11 +19,80 @@ const Navbar = ({ handleOnclick }) => {
             <img className="closeBtn" src={close} onClick={handleOnclick} alt="close button" />
 
             <ul>
-                <li><Link to="/" onClick={handleOnclick}>Home</Link></li>
-                <li><Link to="/projects" onClick={handleOnclick}>Projects</Link></li>
-                <li><Link to="/about" onClick={handleOnclick}>About Me</Link></li>
-                <li><Link onClick={handleOnclick}>Random Stuffs</Link></li>
-                <li><Link onClick={handleOnclick}>Get in touch</Link></li>
+                <motion.li
+                    initial= {{
+                        opacity: 0,
+                        y: 50
+                    }}
+                    animate= {{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                            ease: 'easeIn'
+                        }
+                    }}
+                ><Link to="/" onClick={handleOnclick}>Home</Link></motion.li>
+                <motion.li
+                    initial= {{
+                        opacity: 0,
+                        y: 50
+                    }}
+                    animate= {{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                            delay: 1,
+                            ease: 'easeIn'
+                        }
+                    }}
+                ><Link to="/projects" onClick={handleOnclick}>Projects</Link></motion.li>
+                <motion.li
+                    initial= {{
+                        opacity: 0,
+                        y: 50
+                    }}
+                    animate= {{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                            delay: 1.2,
+                            ease: 'easeIn'
+                        }
+                    }}
+                ><Link to="/about" onClick={handleOnclick}>About Me</Link></motion.li>
+                <motion.li
+                    initial= {{
+                        opacity: 0,
+                        y: 50
+                    }}
+                    animate= {{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                            delay: 1.4,
+                            ease: 'easeIn'
+                        }
+                    }}
+                ><Link onClick={handleOnclick}>Random Stuffs</Link></motion.li>
+                <motion.li
+                    initial= {{
+                        opacity: 0,
+                        y: 50
+                    }}
+                    animate= {{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                            delay: 1.6,
+                            ease: 'easeIn'
+                        }
+                    }}
+                ><Link onClick={handleOnclick}>Get in touch</Link></motion.li>
             </ul>
 
             <div className="socialIcons">

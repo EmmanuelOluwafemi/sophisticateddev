@@ -18,7 +18,9 @@ import WebCaseStudy from '../components/WebCaseStudy';
 import Pagination from '../components/Pagination';
 
 const CaseStudy = () => {
-    window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     
     let { id } = useParams();
 

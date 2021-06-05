@@ -47,9 +47,3 @@ body {
   width: 100%;
   padding: 0 6%;
 }
-
-.its-hover:hover ~ .cursor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

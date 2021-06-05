@@ -9,7 +9,7 @@ const Cursor = ({ comingSoon }) => {
     gsap.set('.cursor', {xPercent: '-50%', yPercent: '-50%'});
     
     window.addEventListener('mousemove', (e) => {
-        gsap.to(cusrsorRef.current, 0, {x:e.clientX - 700, y:e.clientY - 20})
+        gsap.to(cusrsorRef.current, 0, {x:e.clientX , y:e.clientY})
     })
 
     return (

@@ -52,7 +52,7 @@ const IdeaStyle = Styled.div`
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 400;
         color: #fff;
         line-height: 1.6;

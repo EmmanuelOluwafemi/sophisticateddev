@@ -15,25 +15,20 @@ function RenderImages (activeFeatureIndex) {
 
         
         if(comingSoon === true) {
-            return <><div 
-            className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary its-hover' : 'its-hover'}
+            return <div 
+            className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary' : ''}
             key={imageUrl}
             style={{backgroundImage: `url(${imageUrl})`}}
             />
-            <Cursor />
-            </>
-            // eslint-disable-next-line
-            
         }
         else {
-            return <Link to={`/caseStudy/${index}`}><div 
-            className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary its-hover' : 'its-hover'}
+            return <Link to={`/caseStudy/${index}`}>
+            <div 
+            className={activeFeatureIndex.activeFeatureIndex === index ? 'as-primary' : ''}
             key={imageUrl}
             style={{backgroundImage: `url(${imageUrl})`}}
             />
-            <Cursor comingSoon={comingSoon} />
             </Link>
-            // eslint-disable-next-lines
         }
     })
 }
@@ -41,6 +36,7 @@ function RenderImages (activeFeatureIndex) {
 const FeaturedSlides = () => {
 
     const [activeFeatureIndex, setFeatureIndex] = useState(0);
+    const [cursor, setCursor] = useState(false);
 
     const featureSliderRef = useRef(null);
     const featureSliderRightRef = useRef(null);
@@ -68,6 +64,11 @@ const FeaturedSlides = () => {
         master.add(stopTrigger());
     }, [])
 
+    const handleMouse = () => {
+        setCursor(!cursor)
+        console.log(`cursor status ${cursor}`)
+    }
+
     return (
         <FeatureSlidesContainer ref={featureSliderRef}>
             <div className="featureSlideLeft">
@@ -85,9 +86,19 @@ const FeaturedSlides = () => {
                     ))
                 }
             </div>
-            <div ref={featureSliderRightRef} className="featureSlideRight">
-                <RenderImages activeFeatureIndex={activeFeatureIndex} />
+            <div 
+                onMouseEnter={handleMouse}
+                onMouseLeave={handleMouse}
+                ref={featureSliderRightRef} className="featureSlideRight">
+                <RenderImages 
+                    activeFeatureIndex={activeFeatureIndex} 
+                    className="its-hover" 
+                />
             </div>
+            {
+                cursor &&
+                <Cursor />
+            }
         </FeatureSlidesContainer>
     )
 }
