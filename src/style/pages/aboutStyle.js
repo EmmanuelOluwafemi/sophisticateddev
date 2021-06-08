@@ -28,7 +28,10 @@ export const AboutContainer = Styled.section`
 
                 @media (max-width: 768px) {
                     display: block;
+                    width: 65%;
+                    margin: 0 auto;
                     margin-bottom: 4rem;
+
                 }
             }
 

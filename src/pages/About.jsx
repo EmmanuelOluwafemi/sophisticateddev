@@ -55,7 +55,7 @@ const About = () => {
 
                         <p>I started out as an Agricultural Engineer before migrating to product design. 
                             I currently reside in Lagos, Nigeria. I have gathered experiences working at 
-                            <u><a rel="noopener noreferrer" href="https://traindemy.com/">Traindemy</a></u> (Edtech), <u><a rel="noopener noreferrer" href="https://thankucash.com/">ThankUCash</a></u> (Fintech), and <u><a rel="noopener noreferrer" href="https://www.sbsc.com/">Software Business Solution 
+                            <u><a rel="noopener noreferrer" href="https://traindemy.com/"> Traindemy</a></u> (Edtech), <u><a rel="noopener noreferrer" href="https://thankucash.com/">ThankUCash</a></u> (Fintech), and <u><a rel="noopener noreferrer" href="https://www.sbsc.com/">Software Business Solution 
                             consulting(Agency)</a></u>. 
                             I have also freelanced for a lot of startups..
                         </p>
