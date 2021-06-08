@@ -17,6 +17,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import CaseStudy from './pages/CaseStudy';
+import Random from './pages/Random';
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
       <Switch>
           <Route path="/caseStudy/:id">
             <CaseStudy />
+          </Route>
+          <Route path="/random">
+            <Random />
           </Route>
           <Route path="/projects">
             <Projects />

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 
 import {NavbarStyle} from '../style/components/navbar'
@@ -77,7 +78,7 @@ const Navbar = ({ handleOnclick }) => {
                             ease: 'easeIn'
                         }
                     }}
-                ><Link onClick={handleOnclick}>Random Stuffs</Link></motion.li>
+                ><Link to="/random" onClick={handleOnclick}>Random Stuffs</Link></motion.li>
                 <motion.li
                     initial= {{
                         opacity: 0,
@@ -92,15 +93,15 @@ const Navbar = ({ handleOnclick }) => {
                             ease: 'easeIn'
                         }
                     }}
-                ><Link onClick={handleOnclick}>Get in touch</Link></motion.li>
+                ><HashLink to="#footer" onClick={handleOnclick}>Get in touch</HashLink></motion.li>
             </ul>
 
             <div className="socialIcons">
-                <a data-name="twitter" href="twitter.com"><img src={twitter} alt="twitter link" /></a>
-                <a data-name="linkedIn" href="linkedin.com"><img src={linkedin} alt="linkedin link" /></a>
-                <a data-name="dribbble" href="dribbble.com"><img src={dribbble} alt="dribbble link" /></a>
-                <a data-name="behance" href="behance.com"><img src={behance} alt="behance link" /></a>
-                <a data-name="medium" href="medium.com"><img src={medium} alt="medium link" /></a>
+                <a data-name="twitter" href="https://twitter.com/kingsleyiheonye"><img src={twitter} alt="twitter link" /></a>
+                <a data-name="linkedIn" href="https://www.linkedin.com/in/chukwuemeka-iheonye/"><img src={linkedin} alt="linkedin link" /></a>
+                <a data-name="dribbble" href="https://dribbble.com/sophisticateddev"><img src={dribbble} alt="dribbble link" /></a>
+                <a data-name="behance" href="https://www.behance.net/iheonyechukwuemeka"><img src={behance} alt="behance link" /></a>
+                <a data-name="medium" href="https://kingsleyiheonye.medium.com/"><img src={medium} alt="medium link" /></a>
             </div>
 
             <img className="logo" src={logo} alt="logo" />

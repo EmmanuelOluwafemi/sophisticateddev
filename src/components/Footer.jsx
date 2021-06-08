@@ -5,7 +5,7 @@ import Emoji from '../assets/icons/Emoji.svg';
 
 const Footer = () => {
     return (
-        <FooterStyled>
+        <FooterStyled id="footer">
             <div className="grid">
                 <div className="logo">
 
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
 
             <div className="foot_note">
-                Designed by @kingsleyiheonye • Developed by @-
+                Designed by <a href="https://twitter.com/kingsleyiheonye">@kingsleyiheonye</a> • Developed by <a href="https://twitter.com/emaz4me">@emaz4me</a>
             </div>
         </FooterStyled>
     )

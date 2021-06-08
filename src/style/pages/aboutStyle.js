@@ -103,7 +103,10 @@ export const AboutContainer = Styled.section`
                     }
 
                     a {
+                        color: #606060;
                         cursor: pointer;
+                        font-weight: 600;
+                        font-size: 1rem;
 
                         &:hover {
                             color: black;
@@ -114,9 +117,12 @@ export const AboutContainer = Styled.section`
                 h5 {
                     font-size: 1.5rem;
                     color: #606060;
+                    font-weight: 400;
 
                     a {
                         cursor: pointer;
+                        color: #606060;
+                        font-weight: 600;
 
                         &:hover {
                             color: #000;

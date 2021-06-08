@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {AboutContainer} from '../style/pages/aboutStyle';
-import face from '../assets/images/sophisticated.jpg';
 
 import Img from 'react-cool-img';
 
@@ -12,7 +11,7 @@ const About = () => {
             <div className="row">
 
                 <div className="card mobile">
-                    <Img src={face} alt="my face" debounce={50} />
+                    <Img src='https://res.cloudinary.com/dhqvopvj4/image/upload/v1623166346/SophisticatedDev/RandomStuffs/about_pipaou.png' alt="my face" debounce={50} />
                 </div>
                 <div className="card">
                     <motion.svg 
@@ -56,8 +55,8 @@ const About = () => {
 
                         <p>I started out as an Agricultural Engineer before migrating to product design. 
                             I currently reside in Lagos, Nigeria. I have gathered experiences working at 
-                            <u>Traindemy</u> (Edtech), <u>ThankUCash</u> (Fintech), and <u>Software Business Solution 
-                            consulting(Agency)</u>. 
+                            <u><a href="https://traindemy.com/">Traindemy</a></u> (Edtech), <u><a href="https://thankucash.com/">ThankUCash</a></u> (Fintech), and <u><a href="https://www.sbsc.com/">Software Business Solution 
+                            consulting(Agency)</a></u>. 
                             I have also freelanced for a lot of startups..
                         </p>
 
@@ -68,24 +67,25 @@ const About = () => {
                         </p>
 
                         <p>
-                            I am a community builder, I have helped over 7000 people from more than 21 countries of the world get the basic 
-                            knowlegde of UI/UX design. I am also a members of Numerous design communities where I give my quota in spreading 
-                            design education and helping fellow designers. Communities involved include Friends of Figma, Asa 
+                            I am a community builder, I have helped over 7000 people in more than 21 countries get the basic 
+                            knowlegde of UI/UX design. I am also a members of multiple design communities where I give my quota in teaching 
+                            design education and helping fellow designers. These communities include <u><a href="https://twitter.com/figmaafrica">Friends of Figma</a></u>, <u><a href="https://twitter.com/AsaCoterie">Asa Coterie</a></u>, and <u><a href="https://bitcoin.design/">Bitcoin Design</a></u>.
                         </p>
                         <p>
-                            I currently mentor at <u>Zuri Training</u>, <u>HNG Internship</u>, <u>SheCodesAfrica</u>, and <u>Reskill America</u>
-                        </p>
-                        <p>
-                            I am interested in working with startups and product companies that aim to acquire, retain and expand their businesses. 
-                            I you have such dreams do not hesitate to send a hi <a href="/" className="bold"><b>here</b></a>
+                            I currently mentor at <u><a href="https://zuri.team/">Zuri Training</a></u>, <u><a href="https://hng.tech/">HNG Internship</a></u>, <u><a href="https://www.shecodeafrica.org/">SheCodesAfrica</a></u>, and <u><a href="https://reskillamericans.us/">Reskill America</a></u>
                         </p>
 
-                        <h5>View my CV <a href="/"><bold><u>here</u></bold></a></h5>
+                        <p>
+                            I am interested in working with startups and product companies that aim to acquire, retain and expand their businesses. 
+                            If you have such dreams do not hesitate to send a hi <a href="mailto:hi@sophisticateddev.com" className="bold"><b>here</b></a>
+                        </p>
+
+                        <h5>View my CV <a href="https://drive.google.com/file/d/1MrC_S1vvm-n2fT9B5lVDERK8eI5A17WN/view"><bold><u>here</u></bold></a></h5>
                     </motion.div>
                     
                 </div>
                 <div className="card web">
-                    <Img src={face} alt="my face" debounce={50} />
+                    <Img src='https://res.cloudinary.com/dhqvopvj4/image/upload/v1623166346/SophisticatedDev/RandomStuffs/about_pipaou.png' alt="my face" debounce={50} />
                 </div>
             </div>
         </AboutContainer>

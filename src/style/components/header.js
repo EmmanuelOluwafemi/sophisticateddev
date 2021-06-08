@@ -5,6 +5,16 @@ const HeaderStyle = Styled.header`
     max-width: 100vw;
     padding: 1.5rem 0;
 
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #FAFAFA;
+        z-index: 90;
+        padding: 20px 0%;
+    }
+
     @media (max-width: 768px) {
         margin-bottom: 1.5rem;
     }

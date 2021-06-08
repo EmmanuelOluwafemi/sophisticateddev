@@ -12,10 +12,17 @@ import dribbble from '../assets/icons/dribbble.svg';
 import behance from '../assets/icons/behance.svg';
 import medium from '../assets/icons/medium.svg';
 
-const Header = ({ handleOnclick }) => { 
+const Header = ({ handleOnclick }) => {
+
+    window.addEventListener("scroll", function(){
+        let headerEl = document.querySelector('.sec-nav')
+        if(headerEl) {
+          headerEl.classList.toggle('sticky', window.scrollY > 0)
+        }
+    })
 
     return (
-        <HeaderStyle>
+        <HeaderStyle className="sec-nav">
             <div className="container">
                 <nav>
                     <div className="menu">
