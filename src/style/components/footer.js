@@ -78,6 +78,14 @@ export const FooterStyled = Styled.footer`
         font-size: 1rem;
         margin-top: 8.3rem;
 
+        a {
+            color: #7D7D7D;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
         @media (max-width: 768px) {
             margin-top: 4rem;
         }

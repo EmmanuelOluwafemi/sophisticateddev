@@ -55,7 +55,7 @@ const About = () => {
 
                         <p>I started out as an Agricultural Engineer before migrating to product design. 
                             I currently reside in Lagos, Nigeria. I have gathered experiences working at 
-                            <u><a href="https://traindemy.com/">Traindemy</a></u> (Edtech), <u><a href="https://thankucash.com/">ThankUCash</a></u> (Fintech), and <u><a href="https://www.sbsc.com/">Software Business Solution 
+                            <u><a rel="noopener noreferrer" href="https://traindemy.com/">Traindemy</a></u> (Edtech), <u><a rel="noopener noreferrer" href="https://thankucash.com/">ThankUCash</a></u> (Fintech), and <u><a rel="noopener noreferrer" href="https://www.sbsc.com/">Software Business Solution 
                             consulting(Agency)</a></u>. 
                             I have also freelanced for a lot of startups..
                         </p>
@@ -69,18 +69,18 @@ const About = () => {
                         <p>
                             I am a community builder, I have helped over 7000 people in more than 21 countries get the basic 
                             knowlegde of UI/UX design. I am also a members of multiple design communities where I give my quota in teaching 
-                            design education and helping fellow designers. These communities include <u><a href="https://twitter.com/figmaafrica">Friends of Figma</a></u>, <u><a href="https://twitter.com/AsaCoterie">Asa Coterie</a></u>, and <u><a href="https://bitcoin.design/">Bitcoin Design</a></u>.
+                            design education and helping fellow designers. These communities include <u><a rel="noopener noreferrer" href="https://twitter.com/figmaafrica">Friends of Figma</a></u>, <u><a rel="noopener noreferrer" href="https://twitter.com/AsaCoterie">Asa Coterie</a></u>, and <u><a rel="noopener noreferrer" href="https://bitcoin.design/">Bitcoin Design</a></u>.
                         </p>
                         <p>
-                            I currently mentor at <u><a href="https://zuri.team/">Zuri Training</a></u>, <u><a href="https://hng.tech/">HNG Internship</a></u>, <u><a href="https://www.shecodeafrica.org/">SheCodesAfrica</a></u>, and <u><a href="https://reskillamericans.us/">Reskill America</a></u>
+                            I currently mentor at <u><a rel="noopener noreferrer" href="https://zuri.team/">Zuri Training</a></u>, <u><a rel="noopener noreferrer" href="https://hng.tech/">HNG Internship</a></u>, <u><a rel="noopener noreferrer" href="https://www.shecodeafrica.org/">SheCodesAfrica</a></u>, and <u><a rel="noopener noreferrer" href="https://reskillamericans.us/">Reskill America</a></u>
                         </p>
 
                         <p>
                             I am interested in working with startups and product companies that aim to acquire, retain and expand their businesses. 
-                            If you have such dreams do not hesitate to send a hi <a href="mailto:hi@sophisticateddev.com" className="bold"><b>here</b></a>
+                            If you have such dreams do not hesitate to send a hi <a rel="noopener noreferrer" href="mailto:hi@sophisticateddev.com" className="bold"><b>here</b></a>
                         </p>
 
-                        <h5>View my CV <a href="https://drive.google.com/file/d/1MrC_S1vvm-n2fT9B5lVDERK8eI5A17WN/view"><bold><u>here</u></bold></a></h5>
+                        <h5>View my CV <a rel="noopener noreferrer" href="https://drive.google.com/file/d/1MrC_S1vvm-n2fT9B5lVDERK8eI5A17WN/view"><bold><u>here</u></bold></a></h5>
                     </motion.div>
                     
                 </div>
