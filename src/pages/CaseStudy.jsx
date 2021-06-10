@@ -5,7 +5,6 @@ import {CaseContainer} from '../style/pages/caseStudyStyle';
 
 // External Library
 import { useParams } from 'react-router-dom';
-import Img from 'react-cool-img';
 
 // Data
 import {Data} from '../utils/caseStudyData';
@@ -33,8 +32,8 @@ const CaseStudy = () => {
 
     return (
         <CaseContainer>
-            <Img src={caseData.heroBg} alt="project" debounce={50} />
-            <Img src={caseData.projectView} alt="project" debounce={50} />
+            <img src={caseData.heroBg} alt="project" />
+            <img src={caseData.projectView} alt="project" />
 
             <div className="container">
                 <div className="grid">
@@ -55,7 +54,7 @@ const CaseStudy = () => {
                 </div>
             </div>
 
-            <Img src={caseData.present} alt="project" debounce={50} />
+            <img src={caseData.present} alt="project" />
 
             <div className="container">
                 <div className="grid">
@@ -93,7 +92,7 @@ const CaseStudy = () => {
 
             {/* Idea */}
 
-            <Img src={caseData.ideaImg} alt="idea" debounce={50} />
+            <img src={caseData.ideaImg} alt="idea" />
 
             <div className="container">
                 <div className="grid50">
@@ -112,7 +111,7 @@ const CaseStudy = () => {
                 </div>
             </div>
 
-            <Img src={caseData.userFlowImg} alt="flow" debounce={50} />
+            <img src={caseData.userFlowImg} alt="flow" />
 
             <div className="container">
                 <div className="grid">
@@ -123,7 +122,7 @@ const CaseStudy = () => {
                 </div>
             </div>
             
-            <Img src={caseData.sketchImg} alt="sketch" debounce={50} />
+            <img src={caseData.sketchImg} alt="sketch" />
 
             <div className="container">
                 <div className="grid">
@@ -134,7 +133,7 @@ const CaseStudy = () => {
                 </div>
             </div>
 
-            <Img src={caseData.typography} alt="typography" debounce={50} />
+            <img src={caseData.typography} alt="typography" />
 
             <div className="container">
                 <div className="grid">
@@ -193,7 +192,7 @@ const CaseStudy = () => {
             {
                 caseData.type === "web" &&
                 <>
-                    <Img src={caseData.display} alt="display" debounce={50} />
+                    <img src={caseData.display} alt="display"/>
 
                     <div className="container">
                         <div className="grid">

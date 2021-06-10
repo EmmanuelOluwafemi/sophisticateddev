@@ -1,6 +1,5 @@
 import React from 'react';
 import Styled from 'styled-components';
-import Img from 'react-cool-img';
 
 const WebCaseStudy = ({ images }) => {
 
@@ -8,11 +7,10 @@ const WebCaseStudy = ({ images }) => {
         <WebCaseStudyStyle>
             {
                 images.map((img, index) => (
-                    <Img 
+                    <img 
                         className={`img img-${index}`}
                         src={img} 
                         alt="app screens"
-                        debounce={50}
                     />
                 ))
             }

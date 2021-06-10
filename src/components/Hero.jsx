@@ -16,7 +16,7 @@ const Hero = () => {
                     animate= {{
                         opacity: 1,
                         transition: {
-                            duration: 1.5,
+                            duration: 1,
                             ease: 'easeInOut',
                             when: "beforeChildren"
                         }
@@ -32,8 +32,8 @@ const Hero = () => {
                             opacity: 1,
                             y: 0,
                             transition: {
-                                duration: 1.5,
-                                ease: 'easeIn'
+                                duration: 1,
+                                ease: 'easeInOut'
                             }
                         }}
                         viewBox="0 0 468 162" 
@@ -56,7 +56,7 @@ const Hero = () => {
                                 y: 0,
                                 transition: {
                                     duration: 0.5,
-                                    delay: 2,
+                                    delay: 1.5,
                                     ease: 'easeIn'
                                 }
                             }}
@@ -72,7 +72,7 @@ const Hero = () => {
                                 y: 0,
                                 transition: {
                                     duration: 0.5,
-                                    delay: 2.5,
+                                    delay: 2,
                                     ease: 'easeIn'
                                 }
                             }}
@@ -87,7 +87,7 @@ const Hero = () => {
                                 y: 0,
                                 transition: {
                                     duration: 0.5,
-                                    delay: 3,
+                                    delay: 2.5,
                                     ease: 'easeIn'
                                 }
                             }}
@@ -107,7 +107,7 @@ const Hero = () => {
                                     y: 0,
                                     transition: {
                                         duration: 0.5,
-                                        delay: 3.5,
+                                        delay: 3,
                                         ease: 'easeIn'
                                     }
                                 }}
@@ -122,7 +122,7 @@ const Hero = () => {
                                     y: 0,
                                     transition: {
                                         duration: 0.5,
-                                        delay: 4,
+                                        delay: 3.5,
                                         ease: 'easeIn'
                                     }
                                 }}
@@ -137,7 +137,7 @@ const Hero = () => {
                                     y: 0,
                                     transition: {
                                         duration: 0.5,
-                                        delay: 4.5,
+                                        delay: 4,
                                         ease: 'easeIn'
                                     }
                                 }}
@@ -152,7 +152,7 @@ const Hero = () => {
                                     y: 0,
                                     transition: {
                                         duration: 0.5,
-                                        delay: 5,
+                                        delay: 4.5,
                                         ease: 'easeIn'
                                     }
                                 }}
@@ -167,7 +167,7 @@ const Hero = () => {
                                     y: 0,
                                     transition: {
                                         duration: 0.5,
-                                        delay: 6,
+                                        delay: 5,
                                         ease: 'easeIn'
                                     }
                                 }}

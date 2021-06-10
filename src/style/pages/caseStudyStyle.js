@@ -2,8 +2,9 @@ import Styled from 'styled-components';
 
 export const CaseContainer = Styled.section`
     width: 100%;
-    max-width: 100vw;
+    max-width: 1400px;
     min-height: 100vh;
+    margin: 0 auto;
 
     img {
         width: 100%;

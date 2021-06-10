@@ -2,8 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {AboutContainer} from '../style/pages/aboutStyle';
 
-import Img from 'react-cool-img';
-
 const About = () => {
     window.scrollTo(0, 0);
     return (
@@ -11,7 +9,7 @@ const About = () => {
             <div className="row">
 
                 <div className="card mobile">
-                    <Img src='https://res.cloudinary.com/dhqvopvj4/image/upload/v1623166346/SophisticatedDev/RandomStuffs/about_pipaou.png' alt="my face" debounce={50} />
+                    <img src='https://res.cloudinary.com/dhqvopvj4/image/upload/v1623166346/SophisticatedDev/RandomStuffs/about_pipaou.png' alt="my face" debounce={50} />
                 </div>
                 <div className="card">
                     <motion.svg 
@@ -85,7 +83,7 @@ const About = () => {
                     
                 </div>
                 <div className="card web">
-                    <Img src='https://res.cloudinary.com/dhqvopvj4/image/upload/v1623166346/SophisticatedDev/RandomStuffs/about_pipaou.png' alt="my face" debounce={50} />
+                    <img src='https://res.cloudinary.com/dhqvopvj4/image/upload/v1623166346/SophisticatedDev/RandomStuffs/about_pipaou.png' alt="my face" />
                 </div>
             </div>
         </AboutContainer>

@@ -2,7 +2,6 @@ import React from 'react';
 import Styled from 'styled-components';
 import {featuredSlides} from '../../utils/data';
 
-import Img from 'react-cool-img';
 import {Link} from 'react-router-dom';
 
 const FeaturedSlideMobile = () => {
@@ -13,7 +12,7 @@ const FeaturedSlideMobile = () => {
                 {!item.comingSoon ? 
                 <Link to={`/caseStudy/${index}`} style={{ textDecoration: 'none' }}>
                     <div key={item.imageUrl} className="featured">
-                        <Img src={item.imageUrl} alt={item.title} debounce={50} />
+                        <img src={item.imageUrl} alt={item.title} />
                         <div className="featured_content">
                             <div className="title"><span>{item.title}</span> - {item.description}</div>
                             <div className="works">
@@ -26,7 +25,7 @@ const FeaturedSlideMobile = () => {
                     </div>
                 </Link> :
                 <div key={item.imageUrl} className="featured">
-                    <Img src={item.imageUrl} alt={item.title} debounce={50} />
+                    <img src={item.imageUrl} alt={item.title} />
                     <div className="featured_content">
                         <div className="title"><span>{item.title}</span> - {item.description}</div>
                         <div className="works">

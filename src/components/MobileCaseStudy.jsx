@@ -1,8 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-import Img from 'react-cool-img';
-
 const MobileCaseStudy = ({ title, footnote, images }) => {
 
     return (
@@ -11,7 +9,7 @@ const MobileCaseStudy = ({ title, footnote, images }) => {
             <div className="gridMobile">
                 {
                     images.map(img => (
-                        <Img src={img} alt="app screens" debounce={50} />
+                        <img src={img} alt="app screens" />
                     ))
                 }
             </div>

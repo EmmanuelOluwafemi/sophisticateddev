@@ -4,12 +4,10 @@ import Styled from 'styled-components';
 
 import quote from '../assets/icons/quote.svg';
 
-import Img from 'react-cool-img';
-
 const ResearchCard = ({ content, respondent }) => {
     return (
         <ResearchStyle>
-            <Img className="quote" src={quote} alt="quote icon" debounce={50} />
+            <img className="quote" src={quote} alt="quote icon" />
             <div className="cont">{content}</div>
             <div className="name">{respondent}</div>
         </ResearchStyle>
