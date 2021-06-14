@@ -34,11 +34,11 @@ const Header = ({ handleOnclick }) => {
                     </Link>
 
                     <div className="socialIcons">
-                        <a data-name="twitter" target="_blank" rel="noopener noreferrer" href="twitter.com"><img src={twitter} alt="twitter link" /></a>
-                        <a data-name="linkedIn" target="_blank" rel="noopener noreferrer" href="linkedin.com"><img src={linkedin} alt="linkedin link" /></a>
-                        <a data-name="dribbble" target="_blank" rel="noopener noreferrer" href="dribbble.com"><img src={dribbble} alt="dribbble link" /></a>
-                        <a data-name="behance" target="_blank" rel="noopener noreferrer" href="behance.com"><img src={behance} alt="behance link" /></a>
-                        <a data-name="medium" target="_blank" rel="noopener noreferrer" href="medium.com"><img src={medium} alt="medium link" /></a>
+                        <a data-name="twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kingsleyiheonye"><img src={twitter} alt="twitter link" /></a>
+                        <a data-name="linkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chukwuemeka-iheonye/"><img src={linkedin} alt="linkedin link" /></a>
+                        <a data-name="dribbble" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sophisticateddev"><img src={dribbble} alt="dribbble link" /></a>
+                        <a data-name="behance" target="_blank" rel="noopener noreferrer" href="https://www.behance.net/iheonyechukwuemeka"><img src={behance} alt="behance link" /></a>
+                        <a data-name="medium" target="_blank" rel="noopener noreferrer" href="https://kingsleyiheonye.medium.com/"><img src={medium} alt="medium link" /></a>
                     </div>
                 </nav>
             </div>

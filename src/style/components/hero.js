@@ -28,6 +28,7 @@ const HeroStyled = Styled.section`
                 height: auto;
                 cursor: pointer;
                 transition: all .3s ease-in;
+                opacity: 1;
 
                 @media (max-width: 768px) {
                     width: 80%;

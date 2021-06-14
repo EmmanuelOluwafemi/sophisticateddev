@@ -9,18 +9,7 @@ const Hero = () => {
     return (
         <HeroStyled>
             <div className="container">
-                <motion.div 
-                    initial= {{
-                        opacity: 0
-                    }}
-                    animate= {{
-                        opacity: 1,
-                        transition: {
-                            duration: 1,
-                            ease: 'easeInOut',
-                            when: "beforeChildren"
-                        }
-                    }}
+                <div 
                     className="heroSection">
                     <div className="intro">
                     <motion.svg 
@@ -29,10 +18,11 @@ const Hero = () => {
                             y: 80
                         }}
                         animate= {{
-                            opacity: 1,
+                            opacity: .4,
                             y: 0,
                             transition: {
                                 duration: 1,
+                                delay: .5,
                                 ease: 'easeInOut'
                             }
                         }}
@@ -55,9 +45,9 @@ const Hero = () => {
                                 opacity: 1,
                                 y: 0,
                                 transition: {
-                                    duration: 0.5,
-                                    delay: 1.5,
-                                    ease: 'easeIn'
+                                    duration: 0.6,
+                                    delay: .5,
+                                    ease: 'easeInOut'
                                 }
                             }}
                         >I am</motion.h6>
@@ -71,9 +61,9 @@ const Hero = () => {
                                 opacity: 1,
                                 y: 0,
                                 transition: {
-                                    duration: 0.5,
-                                    delay: 2,
-                                    ease: 'easeIn'
+                                    duration: 0.8,
+                                    delay: .5,
+                                    ease: 'easeInOut'
                                 }
                             }}
                         >Iheonye Chukwuemeka</motion.h3>
@@ -86,9 +76,9 @@ const Hero = () => {
                                 opacity: 1,
                                 y: 0,
                                 transition: {
-                                    duration: 0.5,
-                                    delay: 2.5,
-                                    ease: 'easeIn'
+                                    duration: 1,
+                                    delay: .5,
+                                    ease: 'easeInOut'
                                 }
                             }}
                         >a Product Desiner based in Lagos, Nigeria. 
@@ -106,9 +96,9 @@ const Hero = () => {
                                     opacity: 1,
                                     y: 0,
                                     transition: {
-                                        duration: 0.5,
-                                        delay: 3,
-                                        ease: 'easeIn'
+                                        duration: 0.2,
+                                        delay: 2,
+                                        ease: 'easeInOut'
                                     }
                                 }}
                             >Where do you see your business in the near future? </motion.li>
@@ -121,9 +111,9 @@ const Hero = () => {
                                     opacity: 1,
                                     y: 0,
                                     transition: {
-                                        duration: 0.5,
-                                        delay: 3.5,
-                                        ease: 'easeIn'
+                                        duration: 0.4,
+                                        delay: 2,
+                                        ease: 'easeInOut'
                                     }
                                 }}
                             >What do you envision for your users? </motion.li>
@@ -136,9 +126,9 @@ const Hero = () => {
                                     opacity: 1,
                                     y: 0,
                                     transition: {
-                                        duration: 0.5,
-                                        delay: 4,
-                                        ease: 'easeIn'
+                                        duration: 0.6,
+                                        delay: 2,
+                                        ease: 'easeInOut'
                                     }
                                 }}
                             >What is your favourite application? </motion.li>
@@ -151,9 +141,9 @@ const Hero = () => {
                                     opacity: 1,
                                     y: 0,
                                     transition: {
-                                        duration: 0.5,
-                                        delay: 4.5,
-                                        ease: 'easeIn'
+                                        duration: 0.8,
+                                        delay: 2,
+                                        ease: 'easeInOut'
                                     }
                                 }}
                             >Design makes businesses achieve their goals with the users in mind.</motion.li>
@@ -166,15 +156,15 @@ const Hero = () => {
                                     opacity: 1,
                                     y: 0,
                                     transition: {
-                                        duration: 0.5,
-                                        delay: 5,
-                                        ease: 'easeIn'
+                                        duration: 1,
+                                        delay: 2,
+                                        ease: 'easeInOut'
                                     }
                                 }}
                                 className="red">I can help you get there!!!</motion.li>
                         </ul>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </HeroStyled>
     )

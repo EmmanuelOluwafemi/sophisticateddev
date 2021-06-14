@@ -29,7 +29,7 @@ const Navbar = ({ handleOnclick }) => {
                         opacity: 1,
                         y: 0,
                         transition: {
-                            duration: 1,
+                            duration: .3,
                             ease: 'easeIn'
                         }
                     }}
@@ -43,8 +43,8 @@ const Navbar = ({ handleOnclick }) => {
                         opacity: 1,
                         y: 0,
                         transition: {
-                            duration: 1,
-                            delay: 1,
+                            duration: .3,
+                            delay: .2,
                             ease: 'easeIn'
                         }
                     }}
@@ -58,8 +58,8 @@ const Navbar = ({ handleOnclick }) => {
                         opacity: 1,
                         y: 0,
                         transition: {
-                            duration: 1,
-                            delay: 1.2,
+                            duration: .3,
+                            delay: .4,
                             ease: 'easeIn'
                         }
                     }}
@@ -73,8 +73,8 @@ const Navbar = ({ handleOnclick }) => {
                         opacity: 1,
                         y: 0,
                         transition: {
-                            duration: 1,
-                            delay: 1.4,
+                            duration: .3,
+                            delay: .6,
                             ease: 'easeIn'
                         }
                     }}
@@ -88,8 +88,8 @@ const Navbar = ({ handleOnclick }) => {
                         opacity: 1,
                         y: 0,
                         transition: {
-                            duration: 1,
-                            delay: 1.6,
+                            duration: .3,
+                            delay: .8,
                             ease: 'easeIn'
                         }
                     }}
