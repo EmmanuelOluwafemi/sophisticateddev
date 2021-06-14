@@ -10,7 +10,7 @@ const slide = keyframes`
   }
 `;
 
-export const MarqueeContainer = Styled.section`
+export const MarqueeContainer = Styled.div`
     margin: 124px 0; 
 
     @media (max-width: 768px) {
@@ -18,7 +18,7 @@ export const MarqueeContainer = Styled.section`
     }
 `;
 
-export const MarqueeStyle = Styled.section`
+export const MarqueeStyle = Styled.div`
     width: 100vw;
     height: 140px;
     position: relative;

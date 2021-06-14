@@ -11,7 +11,7 @@ export const NavbarStyle = Styled.nav`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 5;
+    z-index: 1000;
 
     ul {
         list-style: none;

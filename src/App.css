@@ -1,0 +1,124 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.scroller {
+  height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section.black {
+    position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* background-color: black; */
+}
+
+@media screen and (max-width: 768px) {
+  section.black {
+    display: none;
+  }
+}
+
+section.blue {
+  background-color: blue;
+}
+
+
+
+.text {
+  color: white;
+}
+
+
+.text-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 100vh;
+}
+
+.text-wrapper {
+  position: relative;
+  width: 450px;
+  height: 100vh;
+}
+
+.panel-text.blue-text {
+  color: blue;
+}
+
+.panel-text.red-text {
+  color: red;
+}
+
+.panel-text.purple-text {
+  color: purple;
+}
+
+.panel-text.orange-text {
+  color: orange;
+}
+
+
+
+
+
+
+.p-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 80vh;
+}
+
+.panel {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.panel:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out .3s;
+}
+
+
+.panel.blue {
+    background-image: url('https://res.cloudinary.com/dhqvopvj4/image/upload/v1621570648/Staybusy_ftjcmw.png')
+}
+
+.panel.red {
+    background-image: url('https://res.cloudinary.com/dhqvopvj4/image/upload/v1623658817/SophisticatedDev/FoodNation_zbwihv.jpg')
+}
+
+.panel.orange {
+    background-image: url('https://res.cloudinary.com/dhqvopvj4/image/upload/v1621570648/Rexsure_mxnmtv.png')
+}
+
+.panel.purple {
+  background-color: purple;
+}

@@ -1,34 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import '../../App.css'
+import React, { useEffect } from 'react';
+import '../App.css'
 import Styled from 'styled-components';
-// import Scrollbar from 'smooth-scrollbar'
+import Scrollbar from 'smooth-scrollbar'
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import Cursor from '../Cursor';
-
-import {useHistory} from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FeaturedProject = () => {
-
-    const History = useHistory();
-    const [cursor, setCursor] = useState(false);
+const Test = () => {
 
     useEffect(() => {
-        // let bodyScrollBar = Scrollbar.init(document.querySelector('.scroller'), {
-        // damping: 0.1,
-        // delegateTo: document,
-        // });
-        // ScrollTrigger.scrollerProxy(".scroller", {
-        // scrollTop(value) {
-        //     if (arguments.length) {
-        //     bodyScrollBar.scrollTop = value;
-        //     }
-        //     return bodyScrollBar.scrollTop;
-        // },
-        // });
-        // bodyScrollBar.addListener(ScrollTrigger.update);
+        let bodyScrollBar = Scrollbar.init(document.querySelector('.scroller'), {
+        damping: 0.1,
+        delegateTo: document,
+        });
+        ScrollTrigger.scrollerProxy(".scroller", {
+        scrollTop(value) {
+            if (arguments.length) {
+            bodyScrollBar.scrollTop = value;
+            }
+            return bodyScrollBar.scrollTop;
+        },
+        });
+        bodyScrollBar.addListener(ScrollTrigger.update);
 
         gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
 
@@ -40,7 +34,7 @@ const FeaturedProject = () => {
             
             scrollTrigger: {
             trigger: "section.black",
-            // scroller: ".scroller",
+            scroller: ".scroller",
             
             start: () => "top -" + (window.innerHeight * (i)),
             
@@ -67,9 +61,9 @@ const FeaturedProject = () => {
         ScrollTrigger.create({
 
             trigger: "section.black",
-            // scroller: ".scroller",
+            scroller: ".scroller",
             scrub: true,
-            markers: false,
+            markers: true,
             ease: "power2.out",
             pin: true,
             start: () => "top top",
@@ -78,15 +72,6 @@ const FeaturedProject = () => {
             animation: translateTextWrapper,
         });
     }, [])
-
-    const handleLink = (index) => {
-        History.push(`/caseStudy/${index}`)
-        // window.location.reload(true)
-    }
-
-    const handleMouse = () => {
-        setCursor(!cursor)
-    }
 
     return (
     <>
@@ -129,23 +114,18 @@ const FeaturedProject = () => {
           </div>
         </div>
         
-        <div onMouseEnter={handleMouse} onMouseLeave={handleMouse} class="p-wrap">
-          <div onClick={()=>{handleLink(0)}} className="panel blue its-hover" /> 
-          <div onClick={()=>{handleLink(1)}} className="panel red its-hover" />
-          <div className="panel orange its-hover" />
-            {
-                cursor && 
-                <Cursor />
-            }
+        <div class="p-wrap">
+          <div class="panel blue"></div> 
+          <div class="panel red"></div>
+          <div class="panel orange"></div>
         </div>
         
       </section>
-      
     </>
     )
 }
 
-export default FeaturedProject;
+export default Test;
 
 const PanelText = Styled.div`
     width: 100%;
