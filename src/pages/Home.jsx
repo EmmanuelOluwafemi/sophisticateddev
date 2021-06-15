@@ -27,7 +27,7 @@ const Home = () => {
                 {/* Twitter */}
                 <meta name="twitter:card" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
                     Human Centered designs for individuals and businesses." key="twcard" />
-                <meta name="twitter:creator" content='' key="twhandle" />
+                <meta name="twitter:creator" content='@kingsleyiheonye' key="twhandle" />
 
                 {/* Open Graph */}
                 <meta property="og:url" content='http://sophisticateddev.com' key="ogurl" />
