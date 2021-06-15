@@ -6,7 +6,7 @@ import Marquee from '../components/Marquee';
 import FeaturedSlideMobile from '../components/featuredSlides/FeaturedSlideMobile';
 import { Helmet } from "react-helmet";
 
-import favicon from '../assets/images/faviconBg.jpg';
+import favicon from '../assets/images/faviconbig.jpg';
 
 const Home = () => {
 
