@@ -7,7 +7,7 @@ import FeaturedSlideMobile from '../components/featuredSlides/FeaturedSlideMobil
 
 import Helmet from 'react-helmet';
 
-import logo from '../../public/faviconbig.jpg';
+import logo from '../public/faviconbig.jpg';
 
 const Home = () => {
 
@@ -35,7 +35,7 @@ const Home = () => {
         <meta property="twitter:description" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
                     Human Centered designs for individuals and businesses."/>
         <meta property="twitter:image" content={logo}/>
-        
+
 
     </Helmet>
     
