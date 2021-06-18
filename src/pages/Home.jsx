@@ -7,7 +7,7 @@ import FeaturedSlideMobile from '../components/featuredSlides/FeaturedSlideMobil
 
 import Helmet from 'react-helmet';
 
-import logo from '../public/faviconbig.jpg';
+import logo from '../assets/images/faviconbig.jpg';
 
 const Home = () => {
 
