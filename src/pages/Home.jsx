@@ -4,9 +4,6 @@ import Hero from '../components/Hero';
 import Styled from 'styled-components';
 import Marquee from '../components/Marquee';
 import FeaturedSlideMobile from '../components/featuredSlides/FeaturedSlideMobile';
-import { Helmet } from "react-helmet";
-
-import favicon from '../assets/images/faviconbig.jpg';
 
 const Home = () => {
 
@@ -14,35 +11,6 @@ const Home = () => {
     
     return (
         <>
-            <Helmet>
-            {/* <!-- HTML Meta Tags --> */}
-                <title>Sophisticateddev</title>
-                <meta name="description" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
-                        Human Centered designs for individuals and businesses." />
-
-                {/* <!-- Google / Search Engine Tags --> */}
-                <meta itemprop="name" content="Sophisticateddev" />
-                <meta itemprop="description" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
-                        Human Centered designs for individuals and businesses." />
-                <meta itemprop="image" content={favicon} />
-
-                {/* <!-- Facebook Meta Tags --> */}
-                <meta property="og:url" content="https://www.sophisticateddev.com" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Sophisticateddev" />
-                <meta property="og:description" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
-                        Human Centered designs for individuals and businesses." />
-                <meta property="og:image" content={favicon} />
-
-                {/* <!-- Twitter Meta Tags --> */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Sophisticateddev" />
-                <meta name="twitter:description" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
-                        Human Centered designs for individuals and businesses." />
-                <meta name="twitter:image" content={favicon} />
-
-                {/* <!-- Meta Tags Generated via http://heymeta.com --> */}
-            </Helmet>
             <Hero />
             <Featured>
                 <h1>Featured Projects</h1>
