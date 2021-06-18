@@ -35,6 +35,7 @@ const Home = () => {
         <meta property="twitter:description" content="I am Iheonye Chukwuemeka Kingsley, a product designer passionate about building 
                     Human Centered designs for individuals and businesses."/>
         <meta property="twitter:image" content={logo}/>
+        
 
     </Helmet>
     
