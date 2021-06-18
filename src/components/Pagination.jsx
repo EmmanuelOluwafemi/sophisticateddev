@@ -52,7 +52,7 @@ const StyledPagination = Styled.div`
         button {
             cursor: pointer;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: 1.5rem;
             background: none;
             border: none;
             outline: none;

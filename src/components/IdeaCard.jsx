@@ -20,6 +20,10 @@ const IdeaStyle = Styled.div`
     background: #F57314;
     border-radius: 8px;
 
+    @media (max-width: 768px) {
+        padding: 2rem 1.7rem;
+    }
+
     &:nth-child(2) {
         margin-top: 3rem;
         

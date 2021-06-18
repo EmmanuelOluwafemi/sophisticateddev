@@ -1,4 +1,14 @@
-import Styled from 'styled-components';
+import Styled, {keyframes} from 'styled-components';
+
+const animate = keyframes`
+    from {
+        transform: scale(.9);
+    }
+
+    to {
+        transform: scale(1)
+    }
+`;
 
 const HeaderStyle = Styled.header`
     width: 100%;
@@ -27,22 +37,15 @@ const HeaderStyle = Styled.header`
 
         .menu {
             cursor: pointer;
+            animation: ${animate} 1s ease-in-out infinite;
 
             img {
                 width: 3rem;
                 height: auto;
                 transition: all .3s ease-in-out;
 
-                &:hover {
-                    width: 2.5rem;
-                }
-
                 @media (max-width: 768px) {
                     width: 2rem;
-
-                    &:hover {
-                        width: 1.8rem;
-                    }
                 }
             }
         }

@@ -23,10 +23,15 @@ export const CaseContainer = Styled.section`
         
         @media (max-width: 768px) {
             grid-template-columns: 100%;
+            padding-top: 2rem;
         }
 
         &:last-child {
             padding-bottom: 6rem;
+
+            @media (max-width: 768px) {
+                padding-top: 2rem;
+            }
         }
 
         .content {
@@ -40,7 +45,7 @@ export const CaseContainer = Styled.section`
 
         h3 {
             color: #001F48;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             max-width: 215px;
 
@@ -51,7 +56,7 @@ export const CaseContainer = Styled.section`
 
         p {
             font-weight: 400;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: #727375;
             max-width: 700px;
             margin-bottom: 1.5rem;
@@ -70,6 +75,7 @@ export const CaseContainer = Styled.section`
 
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
+            padding: 2rem 0;
         }
     }
 
