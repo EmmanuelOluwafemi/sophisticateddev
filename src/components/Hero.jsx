@@ -80,7 +80,7 @@ const Hero = () => {
                                     ease: 'easeInOut'
                                 }
                             }}
-                        >a Product Desiner based in Lagos, Nigeria. 
+                        >a Product Designer based in Lagos, Nigeria. 
                         I am in love with making users fall in love with products.</motion.p>
                     </motion.div>
                     </div>
