@@ -19,11 +19,11 @@ const Marquee = () => {
         </MarqueeStyle>
         <MarqueeStyle className="new">
             <div className="wrapper">
-                <span className="outline">Intercation design</span>
+                <span className="outline">Interaction design</span>
                 <span>Webflow</span>
                 <span className="outline">User Interface Design</span>
                 <span>Usability Testing</span>
-                <span className="outline">Intercation design</span>
+                <span className="outline">Interaction design</span>
                 <span>Webflow</span>
                 <span className="outline">User Interface Design</span>
                 <span>Usability Testing</span>
