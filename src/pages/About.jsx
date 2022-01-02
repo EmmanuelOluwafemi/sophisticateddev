@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {AboutContainer} from '../style/pages/aboutStyle';
 
+import cv from "../assets/cv.pdf";
+
 const About = () => {
     window.scrollTo(0, 0);
     return (
@@ -54,7 +56,7 @@ const About = () => {
                         <p>I started out as an Agricultural Engineer before migrating to product design. 
                             I currently reside in Lagos, Nigeria. I have gathered experiences working at 
                             <u><a rel="noopener noreferrer" href="https://traindemy.com/"> Traindemy</a></u> (Edtech), <u><a rel="noopener noreferrer" href="https://thankucash.com/">ThankUCash</a></u> (Fintech), and <u><a rel="noopener noreferrer" href="https://www.sbsc.com/">Software Business Solution 
-                            consulting(Agency)</a></u>. 
+                            consulting(Agency)</a></u>, and currently with <u><a rel="noopener noreferrer" href="https://softcom.xyz">Softcom</a></u>.
                             I have also freelanced for a lot of startups..
                         </p>
 
@@ -78,7 +80,7 @@ const About = () => {
                             If you have such dreams do not hesitate to send a hi <a rel="noopener noreferrer" href="mailto:hi@sophisticateddev.com" className="bold"><b>here</b></a>
                         </p>
 
-                        <h5>View my CV <a rel="noopener noreferrer" href="https://drive.google.com/file/d/1MrC_S1vvm-n2fT9B5lVDERK8eI5A17WN/view"><bold><u>here</u></bold></a></h5>
+                        <h5>View my CV <a rel="noopener noreferrer" href={cv}><bold><u>here</u></bold></a></h5>
                     </motion.div>
                     
                 </div>
